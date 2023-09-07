@@ -1,87 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabelas</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!--tabela simples-->
-    <h2>Tabela simples</h2>
-    <table>
-        <tr>
-            <td>Jonas</td>
-            <td>HTML</td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <td>Lima</td>
-            <td>CSS</td>
-            <td>10</td>
-        </tr>
-    </table>
+    <header>Cabeçalho da Página</header>
+    <nav>Barra de navegação</nav>
+    <main>
+        <h1>Conteudo da pagina</h1>
+        <aside>Barra lateral</aside>
+        <article>Artigo/post</article>
+        <h2>Listas</h2>
+        <section>
+            <h3>Listas ordenadas</h3>
+            <ol>
+                <li>Primeiro item da lista ordenada</li>
+                <li>Segundo item da lista ordenada</li>
+                <li>Terceiro item da lista ordenada</li>
+            </ol>
+        </section>
+        <section>
+            <h3>Lista não ordenada</h3>
+            <ul>
+                <li>Primeiro item da lista não ordenada</li>
+                <li>Segundo item da lista não ordenada</li>
+                <li>Terceiro item da lista não ordenada</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Lista de definição</h3>
+            <dl>
+                <dt>Primeiro item a ser descrito
+                <dd>descrição do primeiro item</dd>
+                </dt>
+                <dt>Segundo item a ser descrito
+                <dd>descrição do segundo item</dd>
+                </dt>
+                <dt>terceiro item a ser descrito
+                <dd>descrição do terceiro item</dd>
+                </dt>
+            </dl>
+        </section>
+        <!--tabela simples-->
+        <h2>Tabela simples</h2>
+        <table>
+            <tr>
+                <td>Jonas</td>
+                <td>HTML</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Lima</td>
+                <td>CSS</td>
+                <td>10</td>
+            </tr>
+        </table>
 
-    <!--tabela com título-->
-    <h2>Tabela com título</h2>
-    <table>
-        <tr>
-            <th>Aluno</th>
-            <th>Diciplina</th>
-            <th>Nota</th>
-        </tr>
-        <tr>
-            <td>Jonas</td>
-            <td>HTML</td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <td>Jonas</td>
-            <td>CSS</td>
-            <td>10</td>
-        </tr>
-    </table>
+        <!--tabela com título-->
+        <h2>Tabela com título</h2>
+        <table>
+            <tr>
+                <th>Aluno</th>
+                <th>Diciplina</th>
+                <th>Nota</th>
+            </tr>
+            <tr>
+                <td>Jonas</td>
+                <td>HTML</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Jonas</td>
+                <td>CSS</td>
+                <td>10</td>
+            </tr>
+        </table>
 
-    <!--Tabela com cabeçalho e rodapé-->
-    <h2>Tabela com cabeçalho e rodapé</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Mês</th>
-                <th>Horas/Aula</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Agosto</td>
-                <td>40</td>
-            </tr>
-            <tr>
-                <td>Setembro</td>
-                <td>50</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th>Total</th>
-                <th>90</th>
-            </tr>
-        </tfoot>
-    </table>
+        <!--Tabela com cabeçalho e rodapé-->
+        <h2>Tabela com cabeçalho e rodapé</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th>Horas/Aula</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Agosto</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Setembro</td>
+                    <td>50</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <th>90</th>
+                </tr>
+            </tfoot>
+        </table>
 
-    <!--tabela com linha expandida-->
-    <h2>tabela com linha expandida</h2>
-    <table>
-        <tr>
-            <td>Aluno</td>
-            <td colspan="2">Disciplina</td>
-        </tr>
-        <tr>
-            <td>Jonas</td>
-            <td>HTML</td>
-            <td>Ambiente Web</td>
-        </tr>
-    </table>
+        <!--tabela com linha expandida-->
+        <h2>tabela com linha expandida</h2>
+        <table>
+            <tr>
+                <td>Aluno</td>
+                <td colspan="2">Disciplina</td>
+            </tr>
+            <tr>
+                <td>Jonas</td>
+                <td>HTML</td>
+                <td>Ambiente Web</td>
+            </tr>
+        </table>
 
         <!--tabela com coluna expandida-->
         <h2>tabela com coluna expandida</h2>
@@ -96,5 +135,10 @@
                 <td>Ambiente Web</td>
             </tr>
         </table>
+        <video src="small.mp4" controls> </video>
+        <audio src="sample.ogg" controls autoplay loop> </audio>
+    </main>
+    <footer>Rodapé</footer>
 </body>
+
 </html>
