@@ -11,3 +11,7 @@ th{
     border: 1px solid;
     text-align: left;
 }
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
