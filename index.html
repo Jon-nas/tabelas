@@ -138,6 +138,61 @@
         <video src="small.mp4" controls> </video>
         <audio src="sample.ogg" controls autoplay loop> </audio>
     </main>
+    <form action="processa_form.php" method="post">
+        <fieldset>
+            <legend>Dados Gerais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" minlength="3" id="nome" required>
+
+            <label for="data_nascimento">Data de nascimento:</label>
+            <input type="text" id="data_nascimento" name="data_nascimento">
+            
+            <label for="cpf">CPF:</label>
+            <input type="text" maxlength="11" minlength="11" id="cpf" name="cpf" required>
+
+            <label for="tel">Tel. celular:</label>
+            <input type="tel" maxlength="13" id="tel" name="tel" placeholder="85-99999-9999" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="tipo_endereco">Tipo:</label>
+            <select name="tipo_endereco" id="tipo_endereco">
+                <option value="">Selecione</option>
+                <option value="rua">Rua</option>
+                <option value="estrada">Estrada</option>
+                <option value="rodivia">Rodovia</option>
+                <option value="outro">Outro</option>
+            </select>
+            <label for="logradouro_endereco">Logradouro:</label>
+            <input type="text" id="logradouro_endereco" name="logradouro_endereco">
+
+            <label for="numero_endereco">N°:</label>
+            <input type="text" id="numero_endereco" name="numero_endereco">
+
+            <label for="complemento_endereco">Complemeno:</label>
+            <input type="complemento_endereco" id="complemento_endereco" name="complemento_endereco">
+        </fieldset>
+        <fieldset>
+            <legend>Fale Conosco</legend>
+            <label for="tipo_msg">Tipo de emnsagem</label>
+
+            <label for="sugestao">Sugestão:</label>
+            <input type="radio" name="tipo_msg" value="sugestao">
+
+            <label for="critica">Critica:</label>
+            <input type="radio" name="tipo_msg" value="critica">
+
+            <label for="elogio">Elogio:</label>
+            <input type="radio" name="tipo_msg" value="elogio">
+
+            <label for="msg">Mensagem:</label>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <button type="submit">Enviar sua mensagem</button>
+            <button type="reset">Limpar o formulário</button>
+        </fieldset>
+    </form>
     <footer>Rodapé</footer>
 </body>
 
